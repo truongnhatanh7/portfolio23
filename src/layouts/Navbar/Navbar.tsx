@@ -22,7 +22,7 @@ const Navbar = () => {
         }
       </ul>
       <button className="group px-6 py-2 translate-z-0 font-semibold bg-slate-900 relative overflow-hidden rounded-3xl h-fit text-white transition-all">
-        <div className="absolute block h-full top-0 left-0 bottom-0 right-0 w-0 transition-all group-hover:w-full bg-yellow-600 -skew-x-12"></div>
+        <div className="absolute block h-full top-0 left-0 bottom-0 right-0 w-0 transition-all group-hover:w-full bg-indigo-600 -skew-x-12 scale-150"></div>
         <h1 className='relative'>
           CONTACT
         </h1>
