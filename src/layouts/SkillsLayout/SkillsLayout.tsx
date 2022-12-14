@@ -6,19 +6,23 @@ const SkillsLayout = () => {
   const [skills, setSkills] = React.useState([
     "HTML",
     "CSS",
-    "JS",
+    "Javascript",
+    "Typescript",
     "ReactJS",
     "NextJS",
-    "Figma",
-    "Astro",
     "StitchesCSS",
     "TailwindCSS",
+    "Figma",
+    "Storybook",
+    "Photoshop",
+    "AstroJS",
     "NodeJS",
-    "C/C++",
     "Java",
+    "C/C++",
     "Android",
     "SwiftUI",
     "SQL",
+    "PHP",
     "DSA",
 
   ])
@@ -34,6 +38,9 @@ const SkillsLayout = () => {
 
   return (
     <div className='w-screen h-screen grid place-items-center overflow-hidden'>
+      <video autoPlay muted loop className="fixed min-w-full min-h-full -z-20 inset-0 animate-[enterFade_0.2s]">
+        <source src="/video.mp4" type="video/mp4"/>
+      </video>
       <div className="flex flex-wrap gap-4 w-1/2 justify-center animate-[enterFromLeft_0.3s_ease-in-out]">
         {
           skills.map((skill, index) => (

@@ -56,6 +56,17 @@ const enterFromRight = {
 	},
 };
 
+const enterFade = {
+  enterFade: {
+    '0%': {
+      opacity: 0,
+    },
+    '100%': {
+      opacity: 1,
+    }
+  }
+}
+
 module.exports = {
 	content: [
 		"./src/pages/**/*.{js,ts,jsx,tsx}",
@@ -68,6 +79,7 @@ module.exports = {
 				...shapeShifting,
 				...enterFromLeft,
 				...enterFromRight,
+        ...enterFade,
 			},
 		},
 	},

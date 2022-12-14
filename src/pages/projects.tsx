@@ -1,8 +1,16 @@
+import ProjectsLayout from '@layouts/ProjectsLayout/ProjectsLayout';
 import React from 'react'
+import Head from 'next/head'
+
 
 const Projects = () => {
   return (
-    <div>skills</div>
+    <>
+      <Head>
+        <title>PROJECTS</title>
+      </Head>
+      <ProjectsLayout />
+    </>
   )
 }
 
