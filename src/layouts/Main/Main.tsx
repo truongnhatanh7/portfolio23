@@ -5,15 +5,15 @@ import GithubIcon from './GithubLogo'
 
 const Main = () => {
   return (
-    <div className="p-12 grid grid-cols-2 h-screen items-center overflow-hidden">
-      <div className="flex flex-col gap-2 transform-gpu animate-[enterFromLeft_0.3s_ease-in-out]">
-        <h1 className="text-8xl text-left uppercase text-black">
+    <div className="lg:p-12 grid lg:grid-cols-2 grid-cols-1 h-screen items-center overflow-hidden">
+      <div className="flex flex-col items-center lg:items-start gap-2 transform-gpu animate-[enterFromLeft_0.3s_ease-in-out]">
+        <h1 className="lg:text-8xl text-left uppercase text-white font-semibold text-4xl lg:text-black">
           NHAT ANH
         </h1>
-        <h1 className="text-8xl text-left uppercase text-black">
+        <h1 className="lg:text-8xl text-left uppercase text-white font-semibold lg:text-black">
           Frontend Dev
         </h1>
-        <p className='pl-2 text-xl text-slate-600'>
+        <p className='hidden lg:block lg:pl-2 lg:text-xl text-slate-600'>
           RMIT-VN Software Engineering Student (Honours)
         </p>
         <button className="group shadow-lg w-fit px-6 py-3 translate-z-0 font-semibold bg-gray-900 relative overflow-hidden rounded-3xl h-fit text-white transition-all hover:translate-x-1">
@@ -25,7 +25,7 @@ const Main = () => {
           </Link>
         </button>
       </div>
-      <div className="relative col-start-2 col-end-3 row-start-1 ml-auto transform-gpu animate-[enterFromRight_0.3s_ease-in-out]">
+      <div className="relative hidden lg:block col-start-2 col-end-3 row-start-1 ml-auto transform-gpu animate-[enterFromRight_0.3s_ease-in-out]">
         <Image
           src="/avatar.jpg"
           width={400}
