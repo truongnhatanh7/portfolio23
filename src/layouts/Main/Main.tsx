@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 const Main = () => {
   return (
-    <div className="p-12 grid grid-cols-2 h-screen items-center">
-      <div className="flex flex-col gap-2">
+    <div className="p-12 grid grid-cols-2 h-screen items-center overflow-hidden">
+      <div className="flex flex-col gap-2 transform-gpu animate-[enterFromLeft_0.3s_ease-in-out]">
         <h1 className="text-8xl text-left uppercase text-black">
           NHAT ANH
         </h1>
@@ -21,7 +21,7 @@ const Main = () => {
           </h1>
         </button>
       </div>
-      <div className="relative col-start-2 col-end-3 row-start-1 ml-auto">
+      <div className="relative col-start-2 col-end-3 row-start-1 ml-auto transform-gpu animate-[enterFromRight_0.3s_ease-in-out]">
         <Image
           src="/avatar.jpg"
           width={400}
@@ -30,9 +30,9 @@ const Main = () => {
           className="rounded-full object-cover shadow-lg"
         />
       </div>
-      <div className="fixed -z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-gradient-to-r from-transparent to-slate-900 animate-[shapeShifting_5s_ease-in-out_infinite_alternate]">
+      <div className="fixed -z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-gradient-to-r from-transparent to-indigo-600 animate-[shapeShifting_5s_ease-in-out_infinite_alternate]">
       </div>
-      <div className="fixed -z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-gradient-to-r from-transparent to-slate-900 animate-[shapeShifting_7s_ease-in-out_infinite_alternate] scale-90">
+      <div className="fixed -z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-gradient-to-r from-transparent to-indigo-600 animate-[shapeShifting_7s_ease-in-out_infinite_alternate] scale-90">
       </div>
     </div>
   )
