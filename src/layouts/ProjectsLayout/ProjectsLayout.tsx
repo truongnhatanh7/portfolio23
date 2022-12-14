@@ -38,16 +38,16 @@ export const ProjectsLayout = () => {
 
   return (
     <div className='w-screen h-screen grid place-items-center overflow-hidden'>
-      <div className="flex flex-col gap-2 w-full animate-[enterFromRight_0.3s_ease-in-out]">
+      <div className="flex flex-col gap-2 w-full animate-[enterFromRight_0.3s_ease-in-out] px-2 lg:p-0">
         {
           projects.map((project, index) => (
             <Link key={index + project.title} href={project.link}>
-              <div className="group transition-all mx-auto w-1/2 py-4 px-4 flex flex-col gap-1 border-solid border-gray-900 border-2 rounded-lg relative hover:-skew-x-3">
+              <div className="group transition-all mx-auto w-full lg:w-1/2 py-4 px-4 flex flex-col gap-1 border-solid border-gray-900 border-2 rounded-lg relative hover:-skew-x-3">
                 <div className="absolute transition-all right-2 top-2 bottom-2 w-2 rounded-full bg-indigo-400 group-hover:w-4"></div>
-                <h1 className="font-semibold transition-all text-xl group-hover:text-indigo-400 group-hover:tracking-wider">
+                <h1 className="font-semibold transition-all lg:text-xl group-hover:text-indigo-400 group-hover:tracking-wider">
                   {project.title}
                 </h1>
-                <p className="text-gray-700">
+                <p className="hidden lg:block text-gray-700">
                   {project.description}
                 </p>
               </div>
