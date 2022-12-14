@@ -67,6 +67,20 @@ const enterFade = {
   }
 }
 
+const spinSelf = {
+  spinSelf: {
+    '0%': {
+      transform: "rotateX(0)"
+    },
+    '75%': {
+      transform: "rotateX(360deg)"
+    },
+    '100%': {
+      transform: "rotateX(0)"
+    }
+  }
+}
+
 module.exports = {
 	content: [
 		"./src/pages/**/*.{js,ts,jsx,tsx}",
@@ -80,6 +94,7 @@ module.exports = {
 				...enterFromLeft,
 				...enterFromRight,
         ...enterFade,
+        ...spinSelf,
 			},
 		},
 	},

@@ -10,7 +10,7 @@ type NavItems = {
 const Navbar = () => {
   const [items, setItems] = React.useState<NavItems[]>([
     {
-      title: "NANH",
+      title: "HOME",
       link: "/"
     },
     {
@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <div className="w-screen h-16 bg-transparent fixed top-0 left-0 px-2 lg:pl-12 lg:pr-12 flex items-center">
       <Link href="/" className="mr-auto">
-        <h1 className="font-bold hidden lg:block none text-2xl transition-all hover:text-3xl">
+        <h1 className="font-bold hidden lg:block none text-2xl transition-all hover:text-3xl hover:tracking-wider hover:text-indigo-500 animate-[spinSelf_2s_ease-in-out_infinite_alternate]">
           NANH
         </h1>
       </Link>
