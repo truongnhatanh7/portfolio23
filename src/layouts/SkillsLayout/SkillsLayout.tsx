@@ -41,10 +41,10 @@ const SkillsLayout = () => {
       <video autoPlay playsInline muted loop className="fixed w-screen h-screen -z-20 top-0 left-0 object-cover animate-[enterFade_0.2s]">
         <source src="/video.mp4" type="video/mp4"/>
       </video>
-      <div className="flex flex-wrap gap-4 w-1/2 justify-center animate-[enterFromLeft_0.3s_ease-in-out]">
+      <div className="flex flex-wrap gap-2 lg:gap-4 px-2 lg:w-1/2 justify-center animate-[enterFromLeft_0.3s_ease-in-out]">
         {
           skills.map((skill, index) => (
-            <div key={skill} className={`px-6 py-3 rounded-md transition-all bg-slate-900 w-fit 
+            <div key={skill} className={`px-3 py-2 lg:px-6 lg:py-3 rounded-md transition-all w-fit bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-gray-200
                 ${index === currentTag ? "scale-110 bg-indigo-600 shadow-2xl -translate-y-1" : ""}`}
             >
               <p className="text-white select-none">
