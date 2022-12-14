@@ -23,7 +23,7 @@ a {
 
 @layer base {
   body {
-    @apply text-black bg-orange-100;
+    @apply text-black bg-orange-50;
   }
 
 
