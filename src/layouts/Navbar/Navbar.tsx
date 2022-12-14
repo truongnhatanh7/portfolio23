@@ -18,8 +18,8 @@ const Navbar = () => {
       link: "/skills"
     },
     {
-      title: "PROJECTS",
-      link: "/projects"
+      title: "WORKS",
+      link: "/works"
     }
   ])
 
@@ -30,7 +30,7 @@ const Navbar = () => {
           NANH
         </h1>
       </Link>
-      <ul className="flex w-full lg:w-96 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 gap-2">
+      <ul className="flex w-3/4 lg:w-96 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 gap-2">
         {
           items.map(item => (
             <li key={item.link} className="flex-1 text-center">

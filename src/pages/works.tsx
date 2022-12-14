@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <>
       <Head>
-        <title>PROJECTS</title>
+        <title>WORKS</title>
       </Head>
       <ProjectsLayout />
     </>
