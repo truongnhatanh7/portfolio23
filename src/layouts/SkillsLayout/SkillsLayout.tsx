@@ -38,7 +38,7 @@ const SkillsLayout = () => {
 
   return (
     <div className='w-screen h-screen grid place-items-center overflow-hidden'>
-      <video autoPlay playsInline muted loop className="fixed w-screen h-screen -z-20 top-0 left-0 object-cover animate-[enterFade_0.2s]">
+      <video autoPlay playsInline muted poster='/vid-poster.png' loop className="fixed w-screen h-screen -z-20 top-0 left-0 object-cover animate-[enterFade_0.2s]">
         <source src="/video.mp4" type="video/mp4"/>
       </video>
       <div className="flex flex-wrap gap-2 lg:gap-4 px-2 lg:w-1/2 justify-center animate-[enterFromLeft_0.3s_ease-in-out]">

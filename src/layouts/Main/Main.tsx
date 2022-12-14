@@ -32,6 +32,7 @@ const Main = () => {
           height={400}
           alt="avatar"
           className="rounded-full object-cover shadow-lg transition-all hover:rotate-45 hover:border-4 hover:border-white"
+          blurDataURL="/avatar.jpg"
         />
       </div>
       <div className="fixed -z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-gradient-to-r from-transparent to-gray-600 animate-[shapeShifting_5s_ease-in-out_infinite_alternate]">
