@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
+import GithubIcon from './GithubLogo'
 
 const Main = () => {
   return (
@@ -18,8 +19,8 @@ const Main = () => {
         <button className="group shadow-lg w-fit px-6 py-3 translate-z-0 font-semibold bg-gray-900 relative overflow-hidden rounded-3xl h-fit text-white transition-all hover:translate-x-1">
           <div className="absolute block h-full top-0 left-0 bottom-0 right-0 w-0 transition-all group-hover:w-full bg-indigo-600 skew-x-12 scale-150"></div>
           <Link href="https://github.com/truongnhatanh7" className='relative'>
-            <h1>
-              GITHUB
+            <h1 className='flex items-center gap-2'>
+              GITHUB <GithubIcon />
             </h1>
           </Link>
         </button>

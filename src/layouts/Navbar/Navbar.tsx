@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import EnvelopeIcon from './EnvelopeIcon'
 
 type NavItems = {
   title: string,
@@ -33,7 +34,7 @@ const Navbar = () => {
         {
           items.map(item => (
             <li key={item.link} className="flex-1 text-center">
-              <Link href={item.link} className="block p-4 transition-all hover:translate-y-1 hover:shadow-lg hover:h-fit hover:cursor-pointer hover:text-shadow-lg hover:bg-gray-900 hover:text-white hover:rounded-full">{item.title}</Link>
+              <Link href={item.link} className="block py-4 px-6 transition-all hover:translate-y-1 hover:shadow-lg hover:h-fit hover:cursor-pointer hover:text-shadow-lg hover:bg-gray-900 hover:text-white hover:rounded-full">{item.title}</Link>
             </li>
           ))
         }
@@ -41,8 +42,8 @@ const Navbar = () => {
       <button className="group shadow-lg px-6 py-2 translate-z-0 font-semibold bg-gray-900 relative overflow-hidden rounded-3xl h-fit text-white transition-all">
         <div className="absolute block h-full top-0 left-0 bottom-0 right-0 w-0 transition-all group-hover:w-full bg-indigo-600 -skew-x-12 scale-150"></div>
         <Link href="mailto:truongnhatanhw@gmail.com">
-          <h1 className='relative'>
-            CONTACT
+          <h1 className='relative flex items-center gap-2'>
+            CONTACT <EnvelopeIcon />
           </h1>
         </Link>
       </button>

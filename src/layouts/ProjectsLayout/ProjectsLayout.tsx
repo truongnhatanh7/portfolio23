@@ -29,6 +29,11 @@ export const ProjectsLayout = () => {
       description: "Role: Backend Developer | Charity's organization landing page",
       link: "https://ffd-nct.netlify.app/",
     },
+    {
+      title: "This Portfolio Website",
+      description: "Role: Developer | Made with NextJS, TailwindCSS",
+      link: "/",
+    },
   ])
 
   return (
